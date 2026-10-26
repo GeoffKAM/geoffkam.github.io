@@ -1,21 +1,13 @@
+/* Dark theme on every device, whatever the visitor's system setting */
 :root {
-  --bg: #fdfdfb;
-  --text: #1d1d1f;
-  --muted: #5f6368;
-  --accent: #1f4e79;
-  --rule: #e2e2dc;
+  color-scheme: dark;
+  --bg: #16181c;
+  --text: #e6e6e6;
+  --muted: #a0a4ab;
+  --accent: #8ab4f8;
+  --rule: #2e3238;
   --serif: "Charter", "Iowan Old Style", "Georgia", serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #16181c;
-    --text: #e6e6e6;
-    --muted: #a0a4ab;
-    --accent: #8ab4f8;
-    --rule: #2e3238;
-  }
 }
 
 [hidden] { display: none !important; }
@@ -41,14 +33,14 @@ a:hover { text-decoration: underline; }
   padding: 0 16px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 760px) {
   .layout {
     display: grid;
-    grid-template-columns: 15rem minmax(0, 1fr);
+    grid-template-columns: clamp(12rem, 22vw, 15rem) minmax(0, 1fr);
     grid-template-areas:
       "side main"
       "side foot";
-    column-gap: 4rem;
+    column-gap: clamp(2rem, 4vw, 4rem);
     padding: 0 2rem;
   }
   .sidebar {
@@ -67,17 +59,8 @@ a:hover { text-decoration: underline; }
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--rule);
 }
-@media (min-width: 900px) {
+@media (min-width: 760px) {
   .sidebar { border-bottom: 0; }
-}
-.photo {
-  display: block;
-  width: 100%;
-  max-width: 12rem;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 1rem;
 }
 .site-name {
   font-family: var(--serif);
@@ -103,14 +86,14 @@ nav ul { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
 nav a { color: var(--muted); }
 nav a[aria-current="page"] { color: var(--text); font-weight: 600; }
 
-@media (min-width: 900px) {
+@media (min-width: 760px) {
   nav { border-top: 1px solid var(--rule); padding-top: 1rem; margin-top: 0.5rem; }
   nav ul { flex-direction: column; gap: 0.4rem; }
 }
 
 /* Main content */
 main { padding: 2rem 0 3rem; }
-@media (min-width: 900px) {
+@media (min-width: 760px) {
   main { padding-top: 3rem; }
 }
 main > :first-child { margin-top: 0; }
@@ -135,6 +118,17 @@ h3 { font-size: 1.1rem; margin: 0; }
   font-size: 0.9rem;
 }
 .lead { font-size: 1.1rem; }
+
+/* Home intro: text left, photo right */
+.intro { display: flex; align-items: flex-start; gap: 2rem; }
+.intro > div { flex: 1; min-width: 0; }
+.portrait {
+  flex-shrink: 0;
+  width: 13rem;
+  max-width: 36%;
+  height: auto;
+  border-radius: 6px;
+}
 
 /* Paper and item entries */
 .paper { margin: 0 0 1.75rem; }

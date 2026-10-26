@@ -4,11 +4,11 @@ Plain HTML/CSS site, hosted free on GitHub Pages at **https://geoffkam.github.io
 (GitHub account `GeoffKAM`, repository `geoffkam.github.io`).
 
 ```
-index.html      Home: name, bio, job market paper, contact, references
+index.html      Home: about, photo, job market paper, references
 research.html   JMP, working papers, work in progress, research statement
 teaching.html   teaching experience, statement, evaluations, materials
-style.css       all styling (colors at the top)
-images/         photo.jpg goes here
+style.css       all styling (dark theme always on; colors at the top)
+images/         photo.jpg (shown on Home; the original main.jpg is git-ignored)
 files/          cv.pdf, papers/, statements/, teaching/
 .nojekyll       tells GitHub Pages to serve the files as-is
 ```
@@ -23,7 +23,7 @@ Calendar reminder set for that day (Google Calendar, alerts the morning before).
 - [ ] Abstracts for the other papers; move any paper with a draft to Working Papers
 - [ ] Research and teaching statements
 - [ ] Teaching evaluations; teaching materials (Econ 4850 / 6850 notebooks)
-- [ ] References, photo, job-market banner
+- [ ] References, job-market banner
 - [ ] Update "Last updated" in the footers, then commit and push
 
 ## Editing content
@@ -47,7 +47,7 @@ becomes
 | To add | Put the file at | Then un-hide |
 |---|---|---|
 | CV | `files/cv.pdf` | the `CV` menu item in the sidebar of **all three pages** |
-| Photo | `images/photo.jpg` (square, ~400×400 px) | the `<img class="photo">` in the sidebar of **all three pages** |
+| New photo | replace `images/photo.jpg` (portrait 4:5, ~640×800 px) | — (already shown on Home) |
 | JMP draft / slides | `files/papers/jmp.pdf`, `jmp-slides.pdf` | `paper-links` under the JMP on Research, and "Abstract and draft" on Home |
 | An abstract | — (type it in) | the `<details class="abstract">` under that paper |
 | Coauthors / journal status | — | the `authors` / `venue` line under that paper |
@@ -91,7 +91,7 @@ Then open http://localhost:8000. Press Ctrl+C in the terminal to stop.
 2. GitHub Desktop: **File → Add Local Repository…** → choose this folder → **Add Repository**.
    (Its link to `github.com/GeoffKAM/geoffkam.github.io` is already set up.)
 3. Bottom left: type a summary such as `Initial site` → **Commit to main**.
-4. Click **Push origin** (top bar).
+4. Click **Publish branch** (top bar; it reads **Push origin** on later updates).
 5. On github.com, open the repository's **Settings → Pages**. Check that "Source" is
    **Deploy from a branch**, branch **main**, folder **/ (root)**, then **Save** if you changed anything.
 6. After a minute or two the site is live at https://geoffkam.github.io. The **Actions** tab shows
