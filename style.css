@@ -119,14 +119,15 @@ h3 { font-size: 1.1rem; margin: 0; }
 }
 .lead { font-size: 1.1rem; }
 
-/* Home intro: text left, photo right */
-.intro { display: flex; align-items: flex-start; gap: 2rem; }
+/* Home intro: About text left, photo panel right */
+.intro { display: flex; align-items: flex-start; gap: 2.5rem; }
 .intro > div { flex: 1; min-width: 0; }
 .portrait {
   flex-shrink: 0;
-  width: 13rem;
-  max-width: 36%;
+  width: 9.5rem;
+  max-width: 34%;
   height: auto;
+  margin-top: 0.4rem;
   border-radius: 6px;
 }
 
