@@ -81,7 +81,7 @@ hidden slots included, can be seen by anyone. Add a PDF only when you are ready 
 ## Previewing on your Mac
 
 ```bash
-cd "/Users/geoffreykam/Documents/Claude local /personal webste" && python3 -m http.server 8000
+cd "/Users/geoffreykam/Documents/Claude local /personal website" && python3 -m http.server 8000
 ```
 Then open http://localhost:8000. Press Ctrl+C in the terminal to stop.
 

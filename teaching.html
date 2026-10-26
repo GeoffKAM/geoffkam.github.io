@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
   <title>Teaching | Geoffrey Kam</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
   <script src="updated.js?v=3" defer></script>
 </head>
 <body>
@@ -38,10 +38,41 @@
     <h2>Instructor and Course Designer</h2>
     <p>Washington University in St. Louis</p>
     <ul class="plain-list">
-      <li>Econ 4850: Economic Analysis with Python <span class="term">(undergraduate, 2024–2025)</span></li>
+      <li>Econ 4850: Economic Analysis with Python <span class="term">(undergraduate, 2024–2025)</span> · <a href="#econ-4850">course materials</a></li>
       <li>Econ 6850: A First Python Course for Economists <span class="term">(master's, 2024–2025)</span></li>
     </ul>
     <p>Built lecture notebooks and problem sets on NumPy, pandas, FRED API data, visualization, optimization, and simulation.</p>
+
+    <section id="econ-4850" class="course">
+      <h2>Econ 4850 Course Materials</h2>
+      <p>Lecture notes and problem sets from Econ 4850: Economic Analysis with Python (Spring 2025), as Jupyter notebooks. The lecture notes were run end to end, so every output comes from the code shown; the problem sets contain the questions only.</p>
+      <p class="note">Each link downloads a notebook. Open it in JupyterLab or VS Code, or upload it to Google Colab. To run everything, install <a href="https://www.anaconda.com/download">Anaconda</a> (Python 3.11 or later) and <code>pip install autograd fredapi plotly</code>.</p>
+
+      <h3>Lecture notes</h3>
+      <ol class="materials">
+        <li><span class="num">1</span><a href="4850/lectures/L01_Introduction.ipynb" download>Introduction</a></li>
+        <li><span class="num">2</span><a href="4850/lectures/L02_Python_Essentials.ipynb" download>Python essentials</a></li>
+        <li><span class="num">3a</span><a href="4850/lectures/L03a_NumPy.ipynb" download>NumPy</a></li>
+        <li><span class="num">3b</span><a href="4850/lectures/L03b_Numerical_Methods.ipynb" download>Numerical methods</a></li>
+        <li><span class="num">3c</span><a href="4850/lectures/L03c_Gradient_Descent.ipynb" download>Gradient descent</a><span class="tag">bonus</span></li>
+        <li><span class="num">4</span><a href="4850/lectures/L04_Pandas_Basics.ipynb" download>pandas basics</a></li>
+        <li><span class="num">5</span><a href="4850/lectures/L05_FRED_API.ipynb" download>Data from the FRED API</a><span class="tag">needs a free <a href="https://fred.stlouisfed.org/docs/api/api_key.html">FRED API key</a></span></li>
+        <li><span class="num">6</span><a href="4850/lectures/L06_Plotting.ipynb" download>Plotting</a></li>
+        <li><span class="num">7a</span><a href="4850/lectures/L07a_Simulation.ipynb" download>Simulation</a></li>
+        <li><span class="num">7b</span><a href="4850/lectures/L07b_SMM.ipynb" download>The simulated method of moments</a></li>
+        <li><span class="num">8</span><a href="4850/lectures/L08_Value_Function_Iteration.ipynb" download>Value function iteration</a></li>
+      </ol>
+
+      <h3>Problem sets</h3>
+      <ol class="materials">
+        <li><span class="num">1</span><a href="4850/homework/HW1.ipynb" download>Monte Carlo simulation and dynamic programming</a></li>
+        <li><span class="num">2</span><a href="4850/homework/HW2.ipynb" download>Newton's method and empirical distribution functions</a></li>
+        <li><span class="num">3</span><a href="4850/homework/HW3.ipynb" download>Taylor approximation and differential equations</a></li>
+        <li class="companion"><span class="num"></span><a href="4850/homework/HW3_SIR_Demonstration.ipynb" download>SIR model demonstration</a><span class="tag">companion to problem set 3</span></li>
+        <li><span class="num">4</span><a href="4850/homework/HW4_Global_Minimum.ipynb" download>Local and global minimization</a></li>
+        <li><span class="num">5</span><a href="4850/homework/HW5_SMM.ipynb" download>Simulated method of moments</a></li>
+      </ol>
+    </section>
 
     <h2>Teaching Assistant</h2>
     <p>Washington University in St. Louis</p>
@@ -51,14 +82,6 @@
       <li>Econ 5175: Structural Microeconometrics <span class="term">(second-year Ph.D., 2023–2024)</span></li>
       <li>Econ 501/502: Macroeconomics I &amp; II <span class="term">(first-year Ph.D., 2022–2023)</span></li>
     </ul>
-
-    <section hidden>
-      <h2>Teaching Materials</h2>
-      <ul class="plain-list">
-        <li><a href="files/teaching/[file].pdf">[Material title]</a> <span class="term">— Econ 4850, [term]</span></li>
-        <li><a href="files/teaching/[file].pdf">[Material title]</a> <span class="term">— Econ 6850, [term]</span></li>
-      </ul>
-    </section>
   </main>
 
   <footer class="site-footer">Last updated: <span id="updated">October 25, 2026, 7:23 PM CDT</span> (St. Louis time)</footer>
