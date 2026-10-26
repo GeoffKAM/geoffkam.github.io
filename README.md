@@ -8,6 +8,7 @@ index.html      Home: about, photo, job market paper, references
 research.html   JMP, working papers, work in progress, research statement
 teaching.html   teaching experience, statement, evaluations, materials
 style.css       all styling (dark theme always on; colors at the top)
+updated.js      fills in the "Last updated" footer
 images/         photo.jpg (shown on Home; the original main.jpg is git-ignored)
 files/          cv.pdf, papers/, statements/, teaching/
 .nojekyll       tells GitHub Pages to serve the files as-is
@@ -24,7 +25,7 @@ Calendar reminder set for that day (Google Calendar, alerts the morning before).
 - [ ] Research and teaching statements
 - [ ] Teaching evaluations; teaching materials (Econ 4850 / 6850 notebooks)
 - [ ] References, job-market banner
-- [ ] Update "Last updated" in the footers, then commit and push
+- [ ] Commit and push (the footer date updates itself)
 
 ## Editing content
 
@@ -66,12 +67,9 @@ To add a paper, copy a whole `<article class="paper">…</article>` block and ed
 The sidebar (name, email, links, menu) is repeated in all three pages: use your editor's
 find-and-replace across files so the pages stay identical.
 
-After each update, change "Last updated" in the footer of all three pages. This prints the
-current St. Louis time in the same format:
-
-```bash
-TZ=America/Chicago date "+%B %-d, %Y, %-I:%M %p %Z"
-```
+"Last updated" in the footer fills itself in (`updated.js`): it shows the time GitHub Pages
+published the page, in St. Louis time, so every push updates it. The date typed inside
+`<span id="updated">` is only a fallback for browsers with JavaScript turned off.
 
 **Privacy:** the repository is public. Anything in `files/` and anything in the HTML source,
 hidden slots included, can be seen by anyone. Add a PDF only when you are ready to share it.
