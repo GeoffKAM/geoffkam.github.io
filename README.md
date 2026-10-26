@@ -4,7 +4,7 @@ Plain HTML/CSS site, hosted free on GitHub Pages at **https://geoffkam.github.io
 (GitHub account `GeoffKAM`, repository `geoffkam.github.io`).
 
 ```
-index.html      Home: about, photo, job market paper, references
+index.html      Home: about, photo, references
 research.html   JMP, working papers, work in progress, research statement
 teaching.html   teaching experience, statement, evaluations, materials
 style.css       all styling (dark theme always on; colors at the top)
@@ -49,7 +49,7 @@ becomes
 |---|---|---|
 | CV | `files/cv.pdf` | the `CV` menu item in the sidebar of **all three pages** |
 | New photo | replace `images/photo.jpg` (portrait 4:5, ~640×800 px) | — (already shown on Home) |
-| JMP draft / slides | `files/papers/jmp.pdf`, `jmp-slides.pdf` | `paper-links` under the JMP on Research, and "Abstract and draft" on Home |
+| JMP draft / slides | `files/papers/jmp.pdf`, `jmp-slides.pdf` | `paper-links` under the JMP on Research |
 | An abstract | — (type it in) | the `<details class="abstract">` under that paper |
 | Coauthors / journal status | — | the `authors` / `venue` line under that paper |
 | Working Papers section | — | the `<section hidden>` around "Working Papers" on Research; move a paper's `<article>` block there from Work in Progress once its draft exists |
