@@ -24,7 +24,6 @@ Calendar reminder set for that day (Google Calendar, alerts the morning before).
 - [ ] Research and teaching statements
 - [ ] Teaching evaluations; teaching materials (Econ 4850 / 6850 notebooks)
 - [ ] References, photo, job-market banner
-- [ ] Department street address
 - [ ] Update "Last updated" in the footers, then commit and push
 
 ## Editing content
@@ -47,8 +46,8 @@ becomes
 
 | To add | Put the file at | Then un-hide |
 |---|---|---|
-| CV | `files/cv.pdf` | the `CV` menu item on **all three pages**, and `CV (PDF)` on Home |
-| Photo | `images/photo.jpg` (square, ~400×400 px) | the `<img class="photo">` on Home |
+| CV | `files/cv.pdf` | the `CV` menu item in the sidebar of **all three pages** |
+| Photo | `images/photo.jpg` (square, ~400×400 px) | the `<img class="photo">` in the sidebar of **all three pages** |
 | JMP draft / slides | `files/papers/jmp.pdf`, `jmp-slides.pdf` | `paper-links` under the JMP on Research, and "Abstract and draft" on Home |
 | An abstract | — (type it in) | the `<details class="abstract">` under that paper |
 | Coauthors / journal status | — | the `authors` / `venue` line under that paper |
@@ -60,11 +59,19 @@ becomes
 | Teaching materials | `files/teaching/<name>.pdf` | the "Teaching Materials" section, one `<li>` per file |
 | References | — | the "References" section on Home |
 | Job-market banner | — | `jm-banner` on Home |
-| Scholar / SSRN / LinkedIn / GitHub | — | the matching `<li>` in `links` on Home (replace `[ID]`) |
+| Scholar / SSRN / LinkedIn / GitHub | — | the matching `<li>` in the sidebar `links` list of **all three pages** (replace `[ID]`) |
 
 A link with only one item (e.g. a draft but no slides): delete the `<a>…</a>` you do not need.
 To add a paper, copy a whole `<article class="paper">…</article>` block and edit the copy.
-After each update, change "Last updated" in the footer of the pages you touched.
+The sidebar (name, email, links, menu) is repeated in all three pages: use your editor's
+find-and-replace across files so the pages stay identical.
+
+After each update, change "Last updated" in the footer of all three pages. This prints the
+current St. Louis time in the same format:
+
+```bash
+TZ=America/Chicago date "+%B %-d, %Y, %-I:%M %p %Z"
+```
 
 **Privacy:** the repository is public. Anything in `files/` and anything in the HTML source,
 hidden slots included, can be seen by anyone. Add a PDF only when you are ready to share it.
