@@ -152,7 +152,20 @@ details p { margin-top: 0.5rem; }
 .plain-list li { margin-bottom: 0.4rem; }
 .term { color: var(--muted); }
 
-/* Course materials: numbered notebook lists */
+/* Course materials: collapsible section with numbered notebook lists */
+.course > summary { list-style: none; color: inherit; margin: 0; }
+.course > summary::-webkit-details-marker { display: none; }
+.course > summary h2 { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.course > summary h2::after {
+  content: "Show ▸";
+  flex-shrink: 0;
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.course[open] > summary h2::after { content: "Hide ▾"; }
+.course > summary:hover h2::after { text-decoration: underline; }
 .course h3 { margin: 2rem 0 0.5rem; }
 .note { color: var(--muted); font-size: 0.95rem; }
 code {

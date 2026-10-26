@@ -43,8 +43,8 @@
     </ul>
     <p>Built lecture notebooks and problem sets on NumPy, pandas, FRED API data, visualization, optimization, and simulation.</p>
 
-    <section id="econ-4850" class="course">
-      <h2>Econ 4850 Course Materials</h2>
+    <details id="econ-4850" class="course">
+      <summary><h2>Econ 4850 Course Materials</h2></summary>
       <p>Lecture notes and problem sets from Econ 4850: Economic Analysis with Python (Spring 2025), as Jupyter notebooks. The lecture notes were run end to end, so every output comes from the code shown; the problem sets contain the questions only.</p>
       <p class="note">Each link downloads a notebook. Open it in JupyterLab or VS Code, or upload it to Google Colab. To run everything, install <a href="https://www.anaconda.com/download">Anaconda</a> (Python 3.11 or later) and <code>pip install autograd fredapi plotly</code>.</p>
 
@@ -56,7 +56,7 @@
         <li><span class="num">3b</span><a href="4850/lectures/L03b_Numerical_Methods.ipynb" download>Numerical methods</a></li>
         <li><span class="num">3c</span><a href="4850/lectures/L03c_Gradient_Descent.ipynb" download>Gradient descent</a><span class="tag">bonus</span></li>
         <li><span class="num">4</span><a href="4850/lectures/L04_Pandas_Basics.ipynb" download>pandas basics</a></li>
-        <li><span class="num">5</span><a href="4850/lectures/L05_FRED_API.ipynb" download>Data from the FRED API</a><span class="tag">needs a free <a href="https://fred.stlouisfed.org/docs/api/api_key.html">FRED API key</a></span></li>
+        <li><span class="num">5</span><a href="4850/lectures/L05_FRED_API.ipynb" download>Data from the FRED API</a><span class="tag">needs a <a href="https://fred.stlouisfed.org/docs/api/api_key.html">FRED API key</a></span></li>
         <li><span class="num">6</span><a href="4850/lectures/L06_Plotting.ipynb" download>Plotting</a></li>
         <li><span class="num">7a</span><a href="4850/lectures/L07a_Simulation.ipynb" download>Simulation</a></li>
         <li><span class="num">7b</span><a href="4850/lectures/L07b_SMM.ipynb" download>The simulated method of moments</a></li>
@@ -72,7 +72,7 @@
         <li><span class="num">4</span><a href="4850/homework/HW4_Global_Minimum.ipynb" download>Local and global minimization</a></li>
         <li><span class="num">5</span><a href="4850/homework/HW5_SMM.ipynb" download>Simulated method of moments</a></li>
       </ol>
-    </section>
+    </details>
 
     <h2>Teaching Assistant</h2>
     <p>Washington University in St. Louis</p>
@@ -83,6 +83,17 @@
       <li>Econ 501/502: Macroeconomics I &amp; II <span class="term">(first-year Ph.D., 2022–2023)</span></li>
     </ul>
   </main>
+  <script>
+    // Open the collapsed course materials when they are reached through a #link
+    const openTarget = (id) => {
+      const target = document.getElementById(id);
+      if (target && target.tagName === "DETAILS") target.open = true;
+    };
+    openTarget(location.hash.slice(1));
+    document.querySelectorAll('a[href^="#"]').forEach((link) =>
+      link.addEventListener("click", () => openTarget(link.hash.slice(1)))
+    );
+  </script>
 
   <footer class="site-footer">Last updated: <span id="updated">October 25, 2026, 7:23 PM CDT</span> (St. Louis time)</footer>
   </div>
