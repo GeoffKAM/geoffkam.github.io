@@ -71,6 +71,10 @@ find-and-replace across files so the pages stay identical.
 published the page, in St. Louis time, so every push updates it. The date typed inside
 `<span id="updated">` is only a fallback for browsers with JavaScript turned off.
 
+After changing `style.css` or `updated.js`, raise the number after `?v=` where all three pages
+load them (e.g. `style.css?v=3` → `style.css?v=4`). Browsers keep a copy of those files for up to
+10 minutes; a new number makes them fetch the new version at once.
+
 **Privacy:** the repository is public. Anything in `files/` and anything in the HTML source,
 hidden slots included, can be seen by anyone. Add a PDF only when you are ready to share it.
 
