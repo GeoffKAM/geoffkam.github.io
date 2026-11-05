@@ -152,6 +152,9 @@ details p { margin-top: 0.5rem; }
 .plain-list li { margin-bottom: 0.4rem; }
 .term { color: var(--muted); }
 
+/* Placeholder for a file not yet posted ("coming soon") */
+.soon { color: var(--muted); font-style: italic; }
+
 /* Course materials: collapsible section with numbered notebook lists */
 .course > summary { list-style: none; color: inherit; margin: 0; }
 .course > summary::-webkit-details-marker { display: none; }

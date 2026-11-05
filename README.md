@@ -47,14 +47,15 @@ becomes
 
 | To add | Put the file at | Then un-hide |
 |---|---|---|
-| CV | `files/cv.pdf` | the `CV` menu item in the sidebar of **all three pages** |
+| CV | `files/cv.pdf` | the `CV` menu item in the sidebar of **all three pages**, and delete the `<li class="soon">CV (coming soon)</li>` below it; on Home, also un-hide the `CV (PDF)` link under the intro and delete the `soon` line below it |
 | New photo | replace `images/photo.jpg` (portrait 4:5, ~640×800 px) | — (already shown on Home) |
-| JMP draft / slides | `files/papers/jmp.pdf`, `jmp-slides.pdf` | `paper-links` under the JMP on Research |
+| JMP draft / slides | `files/papers/jmp.pdf`, `jmp-slides.pdf` | `paper-links` under the JMP on Research, and delete its `paper-links soon` line |
+| Other paper drafts | `files/papers/pam.pdf`, `vc-cycle.pdf` | the hidden `paper-links` under that paper, and delete its `paper-links soon` line |
 | An abstract | — (type it in) | the `<details class="abstract">` under that paper |
 | Coauthors / journal status | — | the `authors` / `venue` line under that paper |
 | Working Papers section | — | the `<section hidden>` around "Working Papers" on Research; move a paper's `<article>` block there from Work in Progress once its draft exists |
 | Fields | — | the `Fields:` line on Home |
-| Research statement | `files/statements/research-statement.pdf` | the link at the top of Research |
+| Research statement | `files/statements/research-statement.pdf` | the link at the top of Research, and delete the `soon` line below it |
 | Teaching statement | `files/statements/teaching-statement.pdf` | the link at the top of Teaching |
 | Teaching evaluations | `files/teaching/evaluations.pdf` | the link at the top of Teaching |
 | Teaching materials | `files/teaching/<name>.pdf` | the "Teaching Materials" section, one `<li>` per file |
