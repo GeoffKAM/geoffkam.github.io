@@ -20,7 +20,12 @@ Calendar reminder set for that day (Google Calendar, alerts the morning before).
 
 - [ ] Fields line on Home (not in the CV)
 - [ ] Academic CV → `files/cv.pdf`; un-hide the CV links on all three pages
-- [ ] JMP abstract, draft PDF and slides
+- [x] JMP abstract
+- [ ] JMP paper: the PDF at `files/papers/JMP.pdf` is held back by `.gitignore`. To publish it,
+      delete its line in `.gitignore`, commit and push; it is then served at
+      https://geoffkam.github.io/files/papers/JMP.pdf. To also link it, un-hide the JMP's
+      `paper-links` on Research and delete its `paper-links soon` line
+- [ ] JMP slides
 - [ ] Abstracts for the other papers; move any paper with a draft to Working Papers
 - [ ] Research and teaching statements
 - [ ] Teaching evaluations; teaching materials (Econ 4850 / 6850 notebooks)
@@ -49,8 +54,9 @@ becomes
 |---|---|---|
 | CV | `files/cv.pdf` | the `CV` menu item in the sidebar of **all three pages**, and delete the `<li class="soon">CV (coming soon)</li>` below it; on Home, also un-hide the `CV (PDF)` link under the intro and delete the `soon` line below it |
 | New photo | replace `images/photo.jpg` (portrait 4:5, ~640×800 px) | — (already shown on Home) |
-| JMP draft / slides | `files/papers/jmp.pdf`, `jmp-slides.pdf` | `paper-links` under the JMP on Research, and delete its `paper-links soon` line |
-| Other paper drafts | `files/papers/pam.pdf`, `vc-cycle.pdf` | the hidden `paper-links` under that paper, and delete its `paper-links soon` line |
+| New JMP version | replace `files/papers/JMP.pdf` (same name; capital letters matter on GitHub Pages). Once pushed it is served at https://geoffkam.github.io/files/papers/JMP.pdf even while the link is hidden | the JMP's `paper-links` on Research, and delete its `paper-links soon` line; update the abstract there if it changed |
+| JMP slides | `files/papers/jmp-slides.pdf` | the `Slides` link in the JMP's `paper-links` on Research |
+| Other paper drafts | `files/papers/pam.pdf`, `vc-cycle.pdf`, `qsbs.pdf` | the hidden `paper-links` under that paper, and delete its `paper-links soon` line |
 | An abstract | — (type it in) | the `<details class="abstract">` under that paper |
 | Coauthors / journal status | — | the `authors` / `venue` line under that paper |
 | Working Papers section | — | the `<section hidden>` around "Working Papers" on Research; move a paper's `<article>` block there from Work in Progress once its draft exists |
