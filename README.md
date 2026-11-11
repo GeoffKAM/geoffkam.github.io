@@ -21,10 +21,8 @@ Calendar reminder set for that day (Google Calendar, alerts the morning before).
 - [ ] Fields line on Home (not in the CV)
 - [ ] Academic CV → `files/cv.pdf`; un-hide the CV links on all three pages
 - [x] JMP abstract
-- [ ] JMP paper: the PDF at `files/papers/JMP.pdf` is held back by `.gitignore`. To publish it,
-      delete its line in `.gitignore`, commit and push; it is then served at
-      https://geoffkam.github.io/files/papers/JMP.pdf. To also link it, un-hide the JMP's
-      `paper-links` on Research and delete its `paper-links soon` line
+- [x] JMP paper: `files/papers/JMP.pdf`, served at https://geoffkam.github.io/files/papers/JMP.pdf
+      (the address the paper's "latest version" link points to)
 - [ ] JMP slides
 - [ ] Abstracts for the other papers; move any paper with a draft to Working Papers
 - [ ] Research and teaching statements
