@@ -19,7 +19,7 @@ files/          cv.pdf, papers/, statements/, teaching/
 Calendar reminder set for that day (Google Calendar, alerts the morning before). Open items:
 
 - [ ] Fields line on Home (not in the CV)
-- [ ] Academic CV → `files/cv.pdf`; un-hide the CV links on all three pages
+- [x] Academic CV → `files/cv.pdf`; un-hide the CV links on all three pages
 - [x] JMP abstract
 - [x] JMP paper: `files/papers/JMP.pdf`, served at https://geoffkam.github.io/files/papers/JMP.pdf
       (the address the paper's "latest version" link points to)
